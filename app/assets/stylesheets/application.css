@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ .container-fluid {
+   padding-left: 0px;
+   padding-right: 0px;
+   margin: 0px;
+ }
+
+
+
+ .notice,
+ .alert {
+   position: absolute;
+   padding: 10px 1.25rem;
+   border: 1px solid transparent;
+   margin: 70px 20px 0 20px;
+   border-radius: .25rem;
+   text-align: center;
+   background-color: #ffcf3e;
+ }

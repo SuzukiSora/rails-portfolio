@@ -7,4 +7,6 @@ class ToppagesController < ApplicationController
     end
   end
 
+  
+
 end
