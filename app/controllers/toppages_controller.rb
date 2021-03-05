@@ -1,5 +1,10 @@
 class ToppagesController < ApplicationController
+
   def index
-    @posts = current_user.posts.order(id: :desc).page(params[:page])
+    if user_signed_in?
+      @post = Post.find_by(params[:id])
+      @posts = current_user.posts.order(id: :desc).page(params[:page])
+    end
   end
+
 end
